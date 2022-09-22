@@ -5,17 +5,20 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
   
+  
 }
 
 nav {
   height: 48px;
+  width: 100vw;
   font-size: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 0.3s;
 
-  padding: 5%;
+  margin: 0;
+  padding: 0% 2.5%;
   background-color: rgba(60, 58, 57, 1);
   color: white;
   font-weight: 500;
@@ -23,11 +26,20 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu-button {
   /* height: 100%; */
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +70,55 @@ a:active {
 #first {
   background-color: rgba(28, 26, 25, 1);
   height: 100vh;
-  padding-top: 48px;
+  padding: 168px 24px 120px 24px;
+  color: white;
+  overflow: hidden;
+  width: 100vw;
+}
+
+
+#greeting {
+  color: #FF6B00;
+  font-size: 56px;
+}
+
+h1, h2 {
+  font-family: 'Crete round', serif;
+  font-weight: 400;
+}
+
+#fs-content h3 {
+  margin-top: 12px;
+  font-family: 'Roboto', serif; 
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#fs-content p {
+  font-size: 16px;
+  font-family: 'Poppins', serif; 
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 12px;
+  
+}
+
+#fs-content #soc-med {
+  width: 200px;
+  height: 40px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#fs-back {
+  /* z-index: 10; */
+  position: absolute;
+  left: 280px;
+  bottom: -50px
 }
 
 #second {
   height: 100vh;
 }
+
