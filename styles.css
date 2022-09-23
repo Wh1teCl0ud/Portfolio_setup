@@ -82,7 +82,7 @@ a:active {
   padding: 168px 24px 120px 24px;
   color: white;
   width: 100vw;
-  background: no-repeat url("./images/fs-back.png");
+  background: no-repeat url("./Images/fs-back.png");
   background-position: 75vw 110%;
   background-color: rgba(28, 26, 25, 1);
 }
