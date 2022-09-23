@@ -1,6 +1,6 @@
 
 # Portfolio setup
-
+(Via dev tools set width of a viewport to 375 px, and it's gonna look properly).
 
 ## Built With
 
