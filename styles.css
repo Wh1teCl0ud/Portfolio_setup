@@ -1,8 +1,4 @@
 
-body {
-  /* overflow: hidden; */
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,7 +44,6 @@ nav {
 }
 
 #menu-button {
-  /* height: 100%; */
   width: 40px;
   height: 40px;
   display: flex;
