@@ -136,8 +136,8 @@ h2 {
 }
 
 #works {
-  /* display: none; */
-  /* display: flex; */
+  /* display: none;
+  display: flex; */
   padding: 120px 24px;
   width: 100%;
   background-color: white;
@@ -148,7 +148,7 @@ h2 {
 }
 
 #works > h2,
-#works > h3{
+#works > h3 {
   font-family: 'Crete Round', serif;
   font-weight: 400;
 }
