@@ -1,8 +1,4 @@
 
-body {
-  /* width: 100vw; */
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -419,5 +415,3 @@ button#am-button {
   font-size: 22px;
   line-height: 42px;
 }
-
-
