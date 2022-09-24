@@ -137,17 +137,18 @@ h2 {
 
 #works {
   /* display: none; */
+  /* display: flex; */
   padding: 120px 24px;
   width: 100%;
   background-color: white;
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   position: relative;
   z-index: -1;
 }
 
-#works > h2, h3 {
+#works > h2,
+#works > h3{
   font-family: 'Crete Round', serif;
   font-weight: 400;
 }
@@ -285,8 +286,8 @@ h2 {
 }
 
 #sp-lang-wrapper li {
-  padding: 10px 12px;
   /* border: 1px solid rgba(137, 147, 164, 1); */
+  padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.24);
   margin-right: 12px;
   font-family: 'Inter', sans-serif;
@@ -362,13 +363,14 @@ button#am-button {
   color: white;
   background-color: rgba(28, 26, 25, 1);
   display: grid;
+
   /* grid-template-columns: 1fr; */
   gap: 24px;
   justify-content: center;
 }
 
 #s-lan-wrap {
-   text-align: center;
+  text-align: center;
 }
 
 #skills h3 {
@@ -376,7 +378,7 @@ button#am-button {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  margin: 0px 40px;
+  margin: 0 40px;
   display: inline-block;
 }
 
