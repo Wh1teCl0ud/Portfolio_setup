@@ -120,7 +120,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   color: none;
-  list-style: none;  /* This line removes marker from li */
+  list-style: none;
 }
 
 #fs-content button {
@@ -128,7 +128,6 @@ h2 {
 }
 
 #fs-back {
-  /* z-index: 10; */
   position: absolute;
   left: 280px;
   bottom: -50px;
@@ -285,7 +284,6 @@ h2 {
 }
 
 #sp-lang-wrapper li {
-  /* border: 1px solid rgba(137, 147, 164, 1); */
   padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.24);
   margin-right: 12px;
