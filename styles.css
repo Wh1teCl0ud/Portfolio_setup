@@ -1,4 +1,8 @@
 
+body {
+  /* overflow: hidden; */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +35,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {
@@ -298,7 +302,7 @@ h2 {
 
 #about-me {
   /* display: none; */
-  height: 100vh;
+  height: 90vh;
   padding: 120px 24px;
   color: white;
   background: no-repeat url("./Images/About-me-back.png");
@@ -334,11 +338,11 @@ button#am-button {
   background-color: rgb(255, 107, 0, 1);
   color: white;
   font-family: 'Inter', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 1px;
   font-weight: 500;
-  padding: 12px;
+  padding: 15px;
   border: none;
 }
 
