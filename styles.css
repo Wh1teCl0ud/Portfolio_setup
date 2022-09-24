@@ -81,7 +81,7 @@ a:active {
 #first {
   /* display: none; */
   height: 100vh;
-  padding: 168px 24px 120px 24px;
+  padding: 120px 24px 120px 24px;
   color: white;
   width: 100%;
   background: no-repeat url("./Images/fs-back.png");
@@ -144,7 +144,7 @@ h2 {
   padding: 120px 24px;
   width: 100%;
   background-color: white;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -300,14 +300,15 @@ h2 {
 }
 
 #about-me {
+  /* display: none; */
   height: 100vh;
-  padding: 168px 24px 120px 24px;
+  padding: 120px 24px;
   color: white;
-  width: 100%;
   background: no-repeat url("./Images/About-me-back.png");
-  background-position: right bottom 5%;
-  background-size: 43%;
+  background-position: right 200% bottom 2%;
+  background-size: 160%;
   background-color: rgba(28, 26, 25, 1);
+  position: relative;
 }
 
 #am-content {
@@ -343,3 +344,80 @@ button#am-button {
   padding: 12px;
   border: none;
 }
+
+#hor-l-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 85%;
+  z-index: 5;
+}
+
+#hor-line {
+  background-color: white;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  left: -50%;
+}
+
+#skills {
+  padding: 120px 24px;
+  color: white;
+  background-color: rgba(28, 26, 25, 1);
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  gap: 24px;
+  justify-content: center;
+}
+
+#s-lan-wrap {
+   text-align: center;
+}
+
+#skills h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 0px 40px;
+  display: inline-block;
+}
+
+#skills-header-wrapper-l {
+  background: no-repeat url("./Images/Rotated-rectangle.svg") left center;
+  margin: 8px 12px;
+  display: inline-block;
+}
+
+#skills-header-wrapper-f {
+  background: no-repeat url("./Images/Square.svg") left center;
+  margin: 8px 12px;
+  display: inline-block;
+}
+
+#skills-header-wrapper-s {
+  background: no-repeat url("./Images/Circle.svg") left center;
+  margin: 8px 12px;
+  display: inline-block;
+}
+
+#s-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+#s-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 42px;
+}
+
+
