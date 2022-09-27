@@ -293,7 +293,6 @@ h2 {
   color: rgb(91, 89, 87);
 }
 
-
 #sp-content {
   width: 100%;
   padding: 8px 16px;
@@ -395,7 +394,6 @@ h2 {
   border: 1px solid rgb(224, 241, 240);
   color: rgb(91, 89, 87);
 }
-
 
 #hor-l-wrap {
   position: absolute;
@@ -567,4 +565,3 @@ footer {
   display: flex;
   height: 72px;
 }
-
