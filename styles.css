@@ -139,8 +139,8 @@ h2 {
   position: relative;
 }
 
-#works>h2,
-#works>h3 {
+#works > h2,
+#works > h3 {
   font-family: 'Crete Round', serif;
   font-weight: 400;
 }
@@ -194,6 +194,11 @@ h2 {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+.social-icon-f li {
+  display: flex;
+  align-items: center;
 }
 
 #bp-lang-wrapper li {
@@ -505,7 +510,6 @@ form {
   letter-spacing: 1px;
   font-weight: 500;
   padding: 15px;
-  border: none;
   margin: 0 auto;
   border: 1px solid #f55800;
   transition-duration: 0.15s;
@@ -546,7 +550,7 @@ textarea {
 }
 
 ::placeholder {
-  font-size: 15px
+  font-size: 15px;
 }
 
 footer {
@@ -562,7 +566,3 @@ footer {
   height: 72px;
 }
 
-.social-icon-f li {
-  display: flex;
-  align-items: center;
-}
