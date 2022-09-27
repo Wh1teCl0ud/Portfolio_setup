@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -123,10 +122,6 @@ h2 {
   list-style: none;
 }
 
-#fs-content button {
-  background-color: rgb(0, 0, 0, 0);
-}
-
 #fs-back {
   position: absolute;
   left: 280px;
@@ -134,19 +129,18 @@ h2 {
 }
 
 #works {
-  /* display: none;
-  display: flex; */
+  /* display: none; */
+  display: flex;
   padding: 120px 24px;
   width: 100%;
   background-color: white;
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: -1;
 }
 
-#works > h2,
-#works > h3 {
+#works>h2,
+#works>h3 {
   font-family: 'Crete Round', serif;
   font-weight: 400;
 }
@@ -220,7 +214,26 @@ h2 {
   letter-spacing: 1px;
   font-weight: 500;
   padding: 12px;
-  border: none;
+  border: 1px solid #f55800;
+  transition-duration: 0.15s;
+}
+
+#bp-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#bp-button:active {
+  background: rgb(224, 83, 4);
+  border: 1px solid #f55800;
+  color: white;
+}
+
+#bp-button:disabled {
+  background: rgb(224, 241, 240);
+  border: 1px solid rgb(224, 241, 240);
+  color: rgb(91, 89, 87);
 }
 
 #simple-posts-wrapper {
@@ -250,10 +263,29 @@ h2 {
   letter-spacing: 1px;
   font-weight: 500;
   padding: 12px;
-  border: none;
+  border: 1px solid #f55800;
   position: absolute;
   bottom: 0;
   width: 100%;
+  transition-duration: 0.15s;
+}
+
+#sp-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#sp-button:active {
+  background: rgb(224, 83, 4);
+  border: 1px solid #f55800;
+  color: white;
+}
+
+#sp-button:disabled {
+  background: rgb(224, 241, 240);
+  border: 1px solid rgb(224, 241, 240);
+  color: rgb(91, 89, 87);
 }
 
 #sp-content {
@@ -327,7 +359,7 @@ h2 {
   line-height: 24px;
 }
 
-button#am-button {
+#am-button {
   background-color: rgb(255, 107, 0, 1);
   color: white;
   font-family: 'Inter', sans-serif;
@@ -336,7 +368,26 @@ button#am-button {
   letter-spacing: 1px;
   font-weight: 500;
   padding: 15px;
-  border: none;
+  border: 1px solid #f55800;
+  transition-duration: 0.15s;
+}
+
+#am-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#am-button:active {
+  background: rgb(224, 83, 4);
+  border: 1px solid #f55800;
+  color: white;
+}
+
+#am-button:disabled {
+  background: rgb(224, 241, 240);
+  border: 1px solid rgb(224, 241, 240);
+  color: rgb(91, 89, 87);
 }
 
 #hor-l-wrap {
@@ -366,7 +417,7 @@ button#am-button {
   justify-content: center;
 }
 
-#s-lan-wrap {
+#s-wrap {
   text-align: center;
 }
 
@@ -413,4 +464,105 @@ button#am-button {
   font-weight: 300;
   font-size: 22px;
   line-height: 42px;
+}
+
+#contact-form {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(219, 216, 215);
+}
+
+#contact-from * {
+  box-sizing: border;
+}
+
+#contact-form h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: rgb(23, 43, 77);
+  line-height: 44px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 58px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#cf-button {
+  max-width: fit-content;
+  background-color: rgb(255, 107, 0, 1);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 15px;
+  border: none;
+  margin: 0 auto;
+  border: 1px solid #f55800;
+  transition-duration: 0.15s;
+}
+
+#cf-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#cf-button:active {
+  background: rgb(224, 83, 4);
+  border: 1px solid #f55800;
+  color: white;
+}
+
+#cf-button:disabled {
+  background: rgb(224, 241, 240);
+  border: 1px solid rgb(224, 241, 240);
+  color: rgb(91, 89, 87);
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+  padding: 0 16px;
+  height: 48px;
+  border: 0;
+  border-bottom: 1px solid rgb(219, 216, 215);
+}
+
+textarea {
+  font-family: 'Inter', sans-serif;
+  padding: 15px 16px;
+  border: none;
+  background-color: rgb(251, 248, 247);
+  min-height: 6em;
+}
+
+::placeholder {
+  font-size: 15px
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  height: 72px;
+}
+
+.social-icon-f {
+  list-style: none;
+  display: flex;
+  height: 72px;
+}
+
+.social-icon-f li {
+  display: flex;
+  align-items: center;
 }
