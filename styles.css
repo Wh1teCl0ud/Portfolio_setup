@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,31 +7,34 @@
 }
 
 header {
-  height: 48px;
+  height: 8vh;
   width: 100vw;
   margin: 0;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 nav {
-  height: 48px;
+  height: 8vh;
   width: 100vw;
   font-size: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s;
   margin: 0;
   padding: 0% 2.5%;
   background-color: rgba(60, 58, 57, 1);
   color: white;
   font-weight: 500;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+}
+
+@media (min-width: 769px) {
+  nav {
+    font-size: 20px;
+    padding: 0% 9%;
+  }
 }
 
 .logo {
@@ -42,6 +46,32 @@ nav {
   cursor: pointer;
 }
 
+@media (min-width: 769px) {
+  #nav-b-wrap {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 769px) {
+  #nav-b-wrap {
+    display: none;
+  }
+}
+
+#nav-b-wrap a {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+a#letter-icon {
+  padding: 0;
+}
+
 #menu-button {
   width: 40px;
   height: 40px;
@@ -50,6 +80,12 @@ nav {
   align-items: center;
   padding: 2%;
   cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  #menu-button {
+    display: none;
+  }
 }
 
 a:link {
@@ -75,17 +111,35 @@ a:active {
 #first {
   /* display: none; */
   height: 100vh;
-  padding: 120px 24px 120px 24px;
+  padding: 0px 7%;
   color: white;
   width: 100%;
-  background: no-repeat url("./Images/fs-back.png");
+  display: flex;
+  align-items: center;
+  background: no-repeat url("./Images/fs-back.svg");
   background-position: 75vw 110%;
   background-color: rgba(28, 26, 25, 1);
+  /* position: relative; */
+}
+
+@media (min-width: 769px) {
+  #first {
+    padding: 0px 9%;
+    background-size: 60%;
+    background-position: 70vw 110%;
+  }
 }
 
 #greeting {
   color: #ff6b00;
   font-size: 56px;
+}
+
+@media (min-width: 769px) {
+  #greeting {
+    font-size: 72px;
+    line-height: 80px;
+  }
 }
 
 h1,
@@ -95,15 +149,23 @@ h2 {
 }
 
 #fs-content {
-  display: grid;
-  grid-template-columns: 100%;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  max-width: 566px;
 }
 
 #fs-content h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
+}
+
+@media (min-width: 769px) {
+  #fs-content h3 {
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 
 #fs-content p {
@@ -113,13 +175,34 @@ h2 {
   line-height: 24px;
 }
 
-#fs-content #soc-med {
-  width: 200px;
-  height: 40px;
+@media (min-width: 769px) {
+  #fs-content p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+#soc-med {
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: space-around;
-  color: none;
   list-style: none;
+}
+
+@media (min-width: 769px) {
+  #soc-med-wrap {
+    position: absolute;
+    left: 2.5%;
+    top: 50%
+  }
+
+  #soc-med {
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: 100px;
+  }
 }
 
 #fs-back {
@@ -335,7 +418,7 @@ h2 {
   height: 90vh;
   padding: 120px 24px;
   color: white;
-  background: no-repeat url("./Images/About-me-back.png");
+  background: no-repeat url("./Images/about-me-back.svg");
   background-position: right 200% bottom 2%;
   background-size: 160%;
   background-color: rgba(28, 26, 25, 1);
@@ -412,10 +495,11 @@ h2 {
 }
 
 #skills {
+  /* display: none; */
+  display: grid;
   padding: 120px 24px;
   color: white;
   background-color: rgba(28, 26, 25, 1);
-  display: grid;
 
   /* grid-template-columns: 1fr; */
   gap: 24px;
@@ -472,8 +556,9 @@ h2 {
 }
 
 #contact-form {
-  padding: 120px 24px;
+  /* display: none; */
   display: flex;
+  padding: 120px 24px;
   flex-direction: column;
   border-bottom: 1px solid rgb(219, 216, 215);
 }
