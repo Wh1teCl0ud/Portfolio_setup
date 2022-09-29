@@ -109,8 +109,8 @@ a:active {
 }
 
 #first {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   height: 100vh;
   padding: 0px 7%;
   color: white;
@@ -206,8 +206,8 @@ h2 {
 }
 
 #works {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   padding: 120px 7%;
   width: 100%;
   background-color: white;
@@ -389,7 +389,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 24px;
-  justify-content:center;
+  justify-items:center;
 }
 
 #simple-post {
@@ -580,17 +580,28 @@ h2 {
 #skills {
   /* display: none; */
   display: grid;
-  padding: 120px 24px;
+  padding: 120px 9%;
   color: white;
   background-color: rgba(28, 26, 25, 1);
-
-  /* grid-template-columns: 1fr; */
   gap: 24px;
-  justify-content: center;
+  justify-items: center;
+}
+
+@media (min-width: 769px) {
+  #skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
 }
 
 #s-wrap {
-  text-align: center;
+  text-align: left;
+  width: fit-content;
+}
+
+@media (min-width: 769px) {
+  #s-wrap {
+    text-align: left;
+  }
 }
 
 #skills h3 {
@@ -604,33 +615,58 @@ h2 {
 
 #skills-header-wrapper-l {
   background: no-repeat url("./Images/Rotated-rectangle.svg") left center;
-  margin: 8px 12px;
   display: inline-block;
+}
+
+@media (min-width: 769px) {
+  #skills-header-wrapper-l {
+    position: relative;
+    left: -40px;
+  }
 }
 
 #skills-header-wrapper-f {
   background: no-repeat url("./Images/Square.svg") left center;
-  margin: 8px 12px;
   display: inline-block;
+}
+
+@media (min-width: 769px) {
+  #skills-header-wrapper-f {
+    position: relative;
+    left: -40px;
+  }
 }
 
 #skills-header-wrapper-s {
   background: no-repeat url("./Images/Circle.svg") left center;
-  margin: 8px 12px;
   display: inline-block;
 }
 
+@media (min-width: 769px) {
+  #skills-header-wrapper-s {
+    position: relative;
+    left: -40px;
+  }
+}
+
 #s-list {
+  margin-top: 24px;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
+}
+
+@media (min-width: 769px) {
+  #s-list {
+    align-items: start;
+  } 
 }
 
 #s-list li {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
   height: 48px;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
