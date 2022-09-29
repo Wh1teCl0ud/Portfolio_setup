@@ -677,9 +677,23 @@ h2 {
 #contact-form {
   /* display: none; */
   display: flex;
-  padding: 120px 24px;
-  flex-direction: column;
+  justify-content: center;
+  padding: 120px 9%;
   border-bottom: 1px solid rgb(219, 216, 215);
+}
+
+#cf-wrap {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1006px) {
+  #cf-wrap {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 24px;
+  } 
 }
 
 #contact-from * {
@@ -696,12 +710,25 @@ h2 {
   margin-bottom: 58px;
 }
 
+@media (min-width: 1006px) {
+  #contact-form h2 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 52px;
+  } 
+}
+
 form {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: start; */
+  /* align-items: ; */
+}
+
+form > input,
+form > textarea {
+  width: 100%
 }
 
 #cf-button {
@@ -717,6 +744,12 @@ form {
   margin: 0 auto;
   border: 1px solid #f55800;
   transition-duration: 0.15s;
+}
+
+@media (min-width: 769px) {
+  #cf-button {
+    margin: 0;
+  }
 }
 
 #cf-button:hover {
@@ -764,13 +797,22 @@ footer {
   height: 72px;
 }
 
-.social-icon-f {
+.social-list-f {
   list-style: none;
   display: flex;
   height: 72px;
 }
 
-li#social {
+li.social {
+  margin: auto 0;
+  display: flex;
+  height: fit-content;
+  /* align-self: center; */
+}
+
+li.social > a {
+  height: fit-content;
+  width: fit-content;
   display: flex;
   align-items: center;
 }
