@@ -258,7 +258,6 @@ h2 {
     white-space: nowrap;
     border: none;
   }
-
 }
 
 #header-wrapper h2 {
@@ -283,7 +282,6 @@ h2 {
     font-size: 40px;
     line-height: 52px;
   }
-
 }
 
 #big-post {
@@ -299,7 +297,6 @@ h2 {
     grid-template-columns: 60% 40%;
     gap: 24px;
   }
-
 }
 
 @media (min-width: 769px) {
@@ -307,7 +304,6 @@ h2 {
     width: 100%;
     margin: 0;
   }
-
 }
 
 #bp-content {
@@ -325,7 +321,6 @@ h2 {
     font-size: 20px;
     line-height: 28px;
   }
-
 }
 
 #bp-lang-wrapper {
@@ -348,7 +343,6 @@ h2 {
     font-size: 20px;
     line-height: 28px;
   }
-
 }
 
 #bp-button {
@@ -369,7 +363,6 @@ h2 {
     font-size: 22px;
     line-height: 30px;
   }
-
 }
 
 #bp-button:hover {
@@ -497,7 +490,6 @@ h2 {
     background-size: 50%;
     background-position: left 120% bottom 50%;
   }
-
 }
 
 #am-content {
@@ -511,7 +503,6 @@ h2 {
     width: 50%;
     max-width: 560px;
   }
-
 }
 
 #am-content h2 {
@@ -535,7 +526,6 @@ h2 {
     font-size: 20px;
     line-height: 32px;
   }
-
 }
 
 #am-button {
@@ -599,7 +589,6 @@ h2 {
   #skills {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
 
 #s-wrap {
@@ -611,7 +600,6 @@ h2 {
   #s-wrap {
     text-align: left;
   }
-
 }
 
 #skills h3 {
@@ -633,7 +621,6 @@ h2 {
     position: relative;
     left: -40px;
   }
-
 }
 
 #skills-header-wrapper-f {
@@ -646,7 +633,6 @@ h2 {
     position: relative;
     left: -40px;
   }
-
 }
 
 #skills-header-wrapper-s {
@@ -659,7 +645,6 @@ h2 {
     position: relative;
     left: -40px;
   }
-
 }
 
 #s-list {
@@ -675,7 +660,6 @@ h2 {
   #s-list {
     align-items: start;
   }
-
 }
 
 #s-list li {
@@ -708,7 +692,6 @@ h2 {
     grid-template-columns: 40% 60%;
     gap: 24px;
   }
-
 }
 
 #contact-from * {
@@ -731,7 +714,6 @@ h2 {
     font-size: 40px;
     line-height: 52px;
   }
-
 }
 
 form {
