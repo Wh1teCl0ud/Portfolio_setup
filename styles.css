@@ -612,7 +612,7 @@ h2 {
 }
 
 #skills-header-wrapper-l {
-  background: no-repeat url("./Images/Rotated-rectangle.svg") left center;
+  background: no-repeat url("./Images/rotated-rectangle.svg") left center;
   display: inline-block;
 }
 
@@ -624,7 +624,7 @@ h2 {
 }
 
 #skills-header-wrapper-f {
-  background: no-repeat url("./Images/Square.svg") left center;
+  background: no-repeat url("./Images/square.svg") left center;
   display: inline-block;
 }
 
@@ -636,7 +636,7 @@ h2 {
 }
 
 #skills-header-wrapper-s {
-  background: no-repeat url("./Images/Circle.svg") left center;
+  background: no-repeat url("./Images/circle.svg") left center;
   display: inline-block;
 }
 
