@@ -66,7 +66,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* animation-delay: 1s; */
     animation-duration: 1.5s;
     animation-name: nbw-slidein;
   }
@@ -426,12 +425,11 @@ h2 {
   background-size: 100%;
   background-position: bottom;
   position: relative;
-  
 }
-#simple-post:hover{
+
+#simple-post:hover {
   transform: scale(1.05);
   transition-duration: 0.5s;
-
 }
 
 #sp-button {
