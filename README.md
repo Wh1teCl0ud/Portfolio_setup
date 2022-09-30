@@ -11,7 +11,8 @@ The simplest:
 
 ## Live Demo 
 
-[Live Demo Link](https://wh1tecl0ud.github.io/Portfolio_setup/)
+<!-- [Live Demo Link](https://wh1tecl0ud.github.io/Portfolio_setup/) -->
+<a href="https://wh1tecl0ud.github.io/Portfolio_setup/" target="blank">Live Demo Link</a>
 
 
 
