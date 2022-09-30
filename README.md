@@ -1,7 +1,7 @@
 
 # Portfolio setup
 
-**Via dev tools set width of a viewport to 375 px, and it's gonna look properly**
+Fledged for width of a desktop screen and 375px-width phone screen (which you can set via devtools to check) 
 
 ## Built With
 
@@ -11,7 +11,7 @@ The simplest:
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com "for a while only a local one")
+[Live Demo Link](https://wh1tecl0ud.github.io/Portfolio_setup/)
 
 
 
