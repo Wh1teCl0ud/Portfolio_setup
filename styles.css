@@ -28,6 +28,7 @@ nav {
   background-color: rgba(60, 58, 57, 1);
   color: white;
   font-weight: 500;
+  overflow: hidden;
 }
 
 @media (min-width: 769px) {
@@ -44,6 +45,19 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  animation-name: logoRotate;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 769px) {
@@ -52,6 +66,19 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    /* animation-delay: 1s; */
+    animation-duration: 1.5s;
+    animation-name: nbw-slidein;
+  }
+}
+
+@keyframes nbw-slidein {
+  0% {
+    transform: translateX(300%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 
