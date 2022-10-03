@@ -592,17 +592,17 @@ h2 {
 #am-hor-l-wrap {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  width: 82%;
+  left: 0;
+  width: 100%;
   z-index: 5;
+  display: flex;
+  justify-content: center;
 }
 
 #am-hor-line {
   background-color: white;
   height: 1px;
-  width: 100%;
-  position: relative;
-  left: -50%;
+  width: 80%;
 }
 
 #skills {
