@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  /* transition: all 0.2s ease-in-out; */
   scroll-behavior: smooth;
 }
 
 header {
+  display: none;
   height: 8vh;
   width: 100vw;
   margin: 0;
@@ -22,7 +22,7 @@ nav {
   height: 8vh;
   width: 100vw;
   font-size: 17px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -134,6 +134,46 @@ a#letter-icon {
   #menu-button {
     display: none;
   }
+}
+
+#nav-wrap {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(60, 58, 57);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9%
+}
+
+#close-button {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+}
+
+#close-button img {
+  height: 50px;
+}
+
+#nav-m-wrap {
+  position: absolute;
+  top: 15%;
+  width: 82%;
+}
+
+#nav-m-wrap a {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  border-bottom: 1px solid rgb(111, 108, 107);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 #first {
