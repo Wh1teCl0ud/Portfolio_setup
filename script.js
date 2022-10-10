@@ -1,13 +1,19 @@
 const humberger = document.querySelector('#humberger');
 const navMenu = document.querySelector('#nav-wrap');
 const cross = document.querySelector('#close-button');
+const navWBtn = document.getElementsByClassName("nav-w-btn");
 
-humberger.addEventListener("click", () =>{
+humberger.addEventListener("click", () => {
   document.getElementById("nav-wrap").style.left = 0;
-  document.getElementById("header-menu").style.display = 'none';
 });
 
-cross.addEventListener("click", () =>{
+cross.addEventListener("click", () => {
   document.getElementById("nav-wrap").style.left = '100%';
-  document.getElementById("header-menu").style.display = 'block';
-})
+});
+
+
+for(let item of navWBtn){
+  item.addEventListener("click", () => {
+  document.getElementById("nav-wrap").style.left = '100%';
+});
+}
