@@ -170,7 +170,6 @@ a#letter-icon {
   justify-content: start;
   align-items: center;
   padding: 10px;
-  font-size: 30px;
   border-bottom: 1px solid rgb(111, 108, 107);
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -253,7 +252,6 @@ h2 {
 
 #soc-med {
   width: fit-content;
-  height: fit-content;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -405,7 +403,6 @@ h2 {
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
-  height: fit-content;
 }
 
 @media (min-width: 769px) {
@@ -525,7 +522,7 @@ h2 {
 
 #sp-content p {
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
@@ -803,7 +800,7 @@ form {
 }
 
 #cf-button {
-  max-width: fit-content;
+  width: fit-content;
   background-color: rgb(255, 107, 0, 1);
   color: white;
   font-family: 'Inter', sans-serif;
@@ -869,7 +866,6 @@ form > textarea {
 footer {
   display: flex;
   justify-content: center;
-  height: fit-content;
   height: 72px;
 }
 
@@ -882,12 +878,9 @@ footer {
 li.social {
   margin: auto 0;
   display: flex;
-  height: fit-content;
 }
 
 .fl {
-  height: fit-content;
-  width: fit-content;
   display: flex;
   align-items: center;
 }
