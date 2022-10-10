@@ -8,7 +8,7 @@
 }
 
 header {
-  display: none;
+  /* display: none; */
   height: 8vh;
   width: 100vw;
   margin: 0;
@@ -22,7 +22,7 @@ nav {
   height: 8vh;
   width: 100vw;
   font-size: 17px;
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -140,9 +140,9 @@ a#letter-icon {
   height: 100vh;
   width: 100vw;
   background: rgb(60, 58, 57);
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   padding: 9%
 }
 
