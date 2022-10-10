@@ -772,7 +772,7 @@ h2 {
 }
 
 #contact-from * {
-  box-sizing: border;
+  box-sizing: border-box;
 }
 
 #contact-form h2 {
