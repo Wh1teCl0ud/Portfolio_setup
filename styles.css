@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  /* transition: all 0.2s ease-in-out; */
   scroll-behavior: smooth;
 }
 
@@ -83,7 +82,7 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   #nav-b-wrap {
     display: none;
   }
