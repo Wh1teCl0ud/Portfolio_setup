@@ -1,8 +1,8 @@
 const cross = document.querySelector('#close-button');
 const navWBtn = document.getElementsByClassName('nav-w-btn');
-const humberger = document.querySelector('#humberger');
+const hamburger = document.querySelector('#hamburger');
 
-humberger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
   document.getElementById('nav-wrap').style.left = 0;
 });
 

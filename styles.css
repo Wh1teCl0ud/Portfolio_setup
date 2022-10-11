@@ -148,6 +148,12 @@ a#letter-icon {
   transition: 0.3s;
 }
 
+@media (min-width: 769px) {
+  #nav-wrap {
+    display: none;
+  }
+}
+
 #close-button {
   position: absolute;
   top: 2%;
@@ -749,12 +755,6 @@ h2 {
   justify-content: center;
   padding: 120px 9%;
   border-bottom: 1px solid rgb(219, 216, 215);
-}
-
-@media (min-width: 769px) {
-  #contact-form {
-    height: 82vh;
-  }
 }
 
 #cf-wrap {
