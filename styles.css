@@ -8,6 +8,7 @@
 }
 
 header {
+  /* display: none; */
   height: 8vh;
   width: 100vw;
   margin: 0;
@@ -135,6 +136,53 @@ a#letter-icon {
   }
 }
 
+#nav-wrap {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(60, 58, 57);
+  position: fixed;
+  top: 0;
+  left: 100%;
+  padding: 9%;
+  z-index: 11;
+  transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+  #nav-wrap {
+    display: none;
+  }
+}
+
+#close-button {
+  position: absolute;
+  top: 1vh;
+  right: 2.5%;
+}
+
+#close-button img {
+  height: 50px;
+}
+
+#nav-m-wrap {
+  position: absolute;
+  top: 15%;
+  width: 82%;
+}
+
+#nav-m-wrap a {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(111, 108, 107);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 #first {
   /* display: none; */
   display: flex;
@@ -210,7 +258,6 @@ h2 {
 
 #soc-med {
   width: fit-content;
-  height: fit-content;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -319,7 +366,6 @@ h2 {
 
 @media (min-width: 1106px) {
   #big-post {
-    /* max-height: fit-content; */
     display: grid;
     grid-template-columns: 60% 40%;
     gap: 24px;
@@ -362,7 +408,6 @@ h2 {
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
-  height: fit-content;
 }
 
 @media (min-width: 769px) {
@@ -426,7 +471,7 @@ h2 {
   background-size: 100%;
   background-position: bottom;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #simple-post:hover {
@@ -482,7 +527,7 @@ h2 {
 
 #sp-content p {
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
@@ -711,12 +756,6 @@ h2 {
   border-bottom: 1px solid rgb(219, 216, 215);
 }
 
-@media (min-width: 769px) {
-  #contact-form {
-    height: 82vh;
-  }
-}
-
 #cf-wrap {
   max-width: 1440px;
   display: flex;
@@ -732,7 +771,7 @@ h2 {
 }
 
 #contact-from * {
-  box-sizing: border;
+  box-sizing: border-box;
 }
 
 #contact-form h2 {
@@ -760,7 +799,7 @@ form {
 }
 
 #cf-button {
-  max-width: fit-content;
+  width: fit-content;
   background-color: rgb(255, 107, 0, 1);
   color: white;
   font-family: 'Inter', sans-serif;
@@ -826,7 +865,6 @@ form > textarea {
 footer {
   display: flex;
   justify-content: center;
-  height: fit-content;
   height: 72px;
 }
 
@@ -839,12 +877,9 @@ footer {
 li.social {
   margin: auto 0;
   display: flex;
-  height: fit-content;
 }
 
 .fl {
-  height: fit-content;
-  width: fit-content;
   display: flex;
   align-items: center;
 }

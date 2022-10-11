@@ -10,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-   
-<header>
+    
+<header id="header-menu">
   <nav>
     <a href="#first" class="logo">John Doe</a>
     <div id="nav-b-wrap">
@@ -24,9 +25,18 @@
         <img  src="./Images/letter.svg" alt="notification-button">
       </a>
     </div>
-    <div id="menu-button"><img id="humberger" src="./Images/menu hamburger icon.svg" alt="hamburger-button"></div>
+    <div id="menu-button"><img id="hamburger" src="./Images/menu hamburger icon.svg" ></div>
   </nav>
 </header>
+
+<div id="nav-wrap">
+  <div id="close-button"><img src="./Images/X.svg" alt="X"></div>
+  <div id="nav-m-wrap">
+    <a href="#works" class="nav-w-btn">Portfolio</a>
+    <a href="#about-me" class="nav-w-btn">About</a>
+    <a href="#contact-form" class="nav-w-btn">Contact</a>
+  </div>
+</div>
 
 <section id="first">
   <div id="fs-content">
@@ -312,6 +322,8 @@
     </li>
   </ul>
 </footer>
+
+<script src="./script.js" defer></script>
 
 </body>
 </html>
