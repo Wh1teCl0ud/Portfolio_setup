@@ -170,7 +170,7 @@ a#letter-icon {
   width: 82%;
 }
 
-#nav-m-wrap a {
+a.nav-w-btn {
   width: 100%;
   display: flex;
   justify-content: start;
@@ -181,6 +181,7 @@ a#letter-icon {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  color: rgb(255, 245, 225);
 }
 
 #first {
