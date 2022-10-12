@@ -17,23 +17,15 @@ for (let i = 0; i < navWBtn.length; i += 1) {
   });
 }
 
-// dynamic cards
-const projects = [{
-  title: 'Art Printing Data1',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  tech1: 'html',
-  tech2: 'css',
-  tech3: 'bootstrap',
-  btnText: 'See project',
-
-},
-{
+// dynamic preview-cards
+const cards = [{
   title: 'Art Printing Data2',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See project',
+
 },
 {
   title: 'Art Printing Data3',
@@ -42,7 +34,6 @@ const projects = [{
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See project',
-
 },
 {
   title: 'Art Printing Data4',
@@ -51,6 +42,7 @@ const projects = [{
   tech2: 'css',
   tech3: 'bootstrap',
   btnText: 'See project',
+
 },
 {
   title: 'Art Printing Data5',
@@ -68,31 +60,36 @@ const projects = [{
   tech3: 'bootstrap',
   btnText: 'See project',
 },
+{
+  title: 'Art Printing Data7',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  tech1: 'html',
+  tech2: 'css',
+  tech3: 'bootstrap',
+  btnText: 'See project',
+},
 ];
 
 function displayCards() {
   let result = '';
 
-  // projects.forEach(function (project) {
-  //   result += '<div class="simple-post"><div class="sp-content"><div class="sp-h-wrapper"><h3>' + project.title + '</h3></div><p>' + project.description + '</p><ul class="sp-lang-wrapper"> <li>' + project.tech1 + '</li> <li>' + project.tech2 + '</li> <li>' + project.tech3 + '</li></ul></div><a class="sp-link"><button class="sp-button">' + project.btnText + '</button> </a></div>';
-  // });
-
-  projects.forEach((project) => {
+  cards.forEach((card) => {
     result += `<div class="simple-post">
       <div class="sp-content">
         <div class="sp-h-wrapper">
-          <h3>${project.title}</h3>
+          <h3>${card.title}</h3>
         </div>
-        <p>${project.description}</p>
+        <p>${card.description}</p>
         <ul class="sp-lang-wrapper"> 
-          <li>${project.tech1}</li> 
-          <li>${project.tech2}</li> 
-          <li>${project.tech3}</li>
+          <li>${card.tech1}</li> 
+          <li>${card.tech2}</li> 
+          <li>${card.tech3}</li>
         </ul>
       </div>
       <a class="sp-link">
-        <button class="sp-button">${project.btnText}</button> 
-      </a></div>`;
+        <button class="sp-button">${card.btnText}</button> 
+      </a>
+    </div>`;
   });
 
   document.getElementById('simple-posts-wrapper').innerHTML = result;
@@ -128,22 +125,22 @@ for (let i = 0; i < btn.length; i += 1) {
     div2.appendChild(div4);
     const h2 = document.createElement('h2');
     h2.className = 'card-h';
-    h2.textContent = 'Multi Post Stories';
+    // h2.textContent = 'Multi Post Stories';
     div4.appendChild(h2);
     const ul1 = document.createElement('ul');
     ul1.className = 'card-lang-wrapper';
     div4.appendChild(ul1);
     const li1 = document.createElement('li');
-    li1.innerText = 'css';
+    // li1.innerText = 'css';
     ul1.appendChild(li1);
     const li2 = document.createElement('li');
-    li2.innerText = 'html';
+    // li2.innerText = 'html';
     ul1.appendChild(li2);
     const li3 = document.createElement('li');
-    li3.innerText = 'bootstrap';
+    // li3.innerText = 'bootstrap';
     ul1.appendChild(li3);
     const li4 = document.createElement('li');
-    li4.innerText = 'Ruby';
+    // li4.innerText = 'Ruby';
     ul1.appendChild(li4);
 
     // div5
@@ -189,3 +186,120 @@ for (let i = 0; i < btn.length; i += 1) {
     });
   });
 }
+
+// project data
+const projectsData = [{
+  title: 'Multi Post Stories 1',
+  description: "1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+{
+  title: 'Multi Post Stories 2',
+  description: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+{
+  title: 'Multi Post Stories 3',
+  description: "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+{
+  title: 'Multi Post Stories 4',
+  description: "4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+{
+  title: 'Multi Post Stories 5',
+  description: "5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+{
+  title: 'Multi Post Stories 6',
+  description: "6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+{
+  title: 'Multi Post Stories 7',
+  description: "7 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga deleniti.",
+  image: '',
+  tech1: 'css',
+  tech2: 'html',
+  tech3: 'bootstrap',
+  liveLink: '',
+  sourceLink: '',
+},
+];
+
+function displayPopup() {
+  const popupWrap = document.createElement('div');
+  popupWrap.className = 'content-card-wrap';
+
+  let result='';
+
+  projectsData.forEach((project) => {
+    result += `
+      <div class="content-card">
+        <div class="close-button card-x"><img src="./Images/X-d.svg" alt="X"></div>
+        <div class="cc-h-wrap">
+          <h2 class="card-h">${project.title}</h2>
+          <ul class="card-lang-wrapper">
+            <li>${project.tech1}</li>
+            <li>${project.tech2}</li>
+            <li>${project.tech3}</li>
+          </ul>
+        </div>
+        <div class="card-content">
+          <div class="project-img-w">
+            <img src="${project.image}" alt="project-preview" class="project-img">
+          </div>
+          <div class="card-cb-wrap">
+            <p class="card-p">
+            ${project.description}
+            </p>
+            <div class="card-b-wrap">
+              <a class="card-link">
+                <button class="card-button">See Live<img src="./Images/card-icon.svg" alt="" class="card-i"></button>
+              </a>
+              <a class="card-link">
+                <button class="card-button">See Source<img src="./Images/github-w.svg" alt=""></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  });
+
+  document.getElementsByClassName('content-card-wrap').innerHTML = result;
+}
+
+displayPopup();
