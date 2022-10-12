@@ -87,7 +87,7 @@ function displayCards() {
         </ul>
       </div>
       <a class="sp-link">
-        <button class="sp-button">${card.btnText}</button> 
+        <button class="sp-button card-btn-open">${card.btnText}</button> 
       </a>
     </div>`;
   });
@@ -276,33 +276,35 @@ const projectsData = [
   },
 ];
 
-const btn = document.getElementsByClassName('sp-button');
-for (let i = 0; i < btn.length; i += 1) {
-  btn[i].addEventListener('click', () => {
-    const popupWrap = document.createElement('div');
-    popupWrap.className = 'content-card-wrap';
+// const btn = document.getElementsByClassName('card-btn-open');
+// for (let i = 1; i < btn.length; i += 1) {
+//   btn[i].addEventListener('click', () => {
+const popupWrap = document.createElement('div');
+popupWrap.className = 'content-card-wrap';
 
-    let result = '';
+let result = '';
 
-    projectsData.forEach((project) => {
-      result += `
+document.getElementsByClassName('content-card-wrap').innerHTML = result;
+
+function modal(obj) {
+  result += `
         <div class="content-card">
           <div class="close-button card-x"><img src="./Images/X-d.svg" alt="X"></div>
           <div class="cc-h-wrap">
-            <h2 class="card-h">${project.title}</h2>
+            <h2 class="card-h">${obj.title}</h2>
             <ul class="card-lang-wrapper">
-              <li>${project.tech1}</li>
-              <li>${project.tech2}</li>
-              <li>${project.tech3}</li>
+              <li>${obj.tech1}</li>
+              <li>${obj.tech2}</li>
+              <li>${obj.tech3}</li>
             </ul>
           </div>
           <div class="card-content">
-            <div class="project-img-w">
-              <img src="${project.image}" alt="project-preview" class="project-img">
+            <div class="obj-img-w">
+              <img src="${obj.image}" alt="obj-preview" class="obj-img">
             </div>
             <div class="card-cb-wrap">
               <p class="card-p">
-              ${project.description}
+              ${obj.description}
               </p>
               <div class="card-b-wrap">
                 <a class="card-link">
@@ -315,18 +317,18 @@ for (let i = 0; i < btn.length; i += 1) {
             </div>
           </div>
         </div>`;
-    });
 
-    document.getElementsByClassName('content-card-wrap').innerHTML = result;
-
-    // close the card
-    const cardX = document.getElementsByClassName('card-x');
-    cardX.addEventListener('click', () => {
-      document.body.removeChild(popupWrap);
-      document.getElementsByClassName('content-card-wrap').style.visibility = 'visible';
-    });
+  // close the card
+  const cardX = document.getElementsByClassName('card-x');
+  cardX.addEventListener('click', () => {
+    document.body.removeChild(popupWrap);
   });
 }
+
+modal(projectsData[1]);
+// modal(projectsData[i]);
+//   });
+// }
 
 // function displayPopup() {
 //   const popupWrap = document.createElement('div');
