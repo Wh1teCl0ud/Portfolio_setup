@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  /* overflow: hidden; */
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -160,6 +161,13 @@ a#letter-icon {
   right: 2.5%;
 }
 
+@media (min-width: 769px) {
+  .close-button {
+    top: 20px;
+    right: 20px;
+  } 
+}
+
 .close-button img {
   height: 50px;
 }
@@ -281,13 +289,13 @@ h2 {
 
 .content-card-wrap {
   /* display: none; */
+  display: flex;
   z-index: 12;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
@@ -307,7 +315,8 @@ h2 {
 @media (min-width: 769px) {
   .content-card {
     width: 80%;
-    height: 70%;
+    height: 80%;
+    padding: 2.5%;
   }
 }
 
@@ -327,7 +336,7 @@ h2 {
 
 .card-h {
   font-size: 32px;
-  line-height: 44px;
+  line-height: 40px;
 }
 
 .card-lang-wrapper {
@@ -344,49 +353,62 @@ h2 {
   font-weight: 500;
   color: rgb(60, 58, 57);
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 769px) {
   .card-lang-wrapper li {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
 .card-content {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 24px; */
-  display: grid;
-  grid-template-columns: 60% 40%;
+  gap: 24px;
 }
 
 @media (min-width: 769px) {
   .card-content {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    height: 50%;
   }
 }
 
 .project-img-w {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
 }
 
 @media (min-width: 769px) {
   .project-img-w {
-    width: 50%;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .project-img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 769px) {
+  .project-img {
+    width: 100%;
+  }
 }
 
 .card-cb-wrap {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  justify-content: space-between;
 }
 
 .card-p {
@@ -397,6 +419,12 @@ h2 {
   color: rgb(52, 69, 99);
   max-height: 50%;
   overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .card-p {
+    max-height: none;
+  }
 }
 
 .card-b-wrap {
@@ -416,13 +444,14 @@ h2 {
   border: 1px solid #f55800;
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   transition-duration: 0.15s;
 }
 
 @media (min-width: 769px) {
   .card-button {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
