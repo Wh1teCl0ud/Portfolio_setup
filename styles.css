@@ -1,7 +1,7 @@
 
 * {
-  box-sizing: border-box;
   /* overflow: hidden; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -165,7 +165,7 @@ a#letter-icon {
   .close-button {
     top: 20px;
     right: 20px;
-  } 
+  }
 }
 
 .close-button img {
@@ -231,27 +231,27 @@ h2 {
   font-weight: 400;
 }
 
-#fs-content {
+.fs-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 566px;
 }
 
-#fs-content h3 {
+.fs-content h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 @media (min-width: 769px) {
-  #fs-content h3 {
+  .fs-content h3 {
     font-size: 32px;
     line-height: 44px;
   }
 }
 
-#fs-content p {
+.fs-content p {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -259,7 +259,7 @@ h2 {
 }
 
 @media (min-width: 769px) {
-  #fs-content p {
+  .fs-content p {
     font-size: 20px;
     line-height: 32px;
   }
@@ -591,12 +591,12 @@ h2 {
   }
 }
 
-#bp-lang-wrapper {
+.bp-lang-wrapper {
   list-style: none;
   display: flex;
 }
 
-#bp-lang-wrapper li {
+.bp-lang-wrapper li {
   padding: 8px 12px;
   border: 1px solid rgba(137, 147, 164, 1);
   margin-right: 12px;
@@ -606,7 +606,7 @@ h2 {
 }
 
 @media (min-width: 769px) {
-  #bp-lang-wrapper li {
+  .bp-lang-wrapper li {
     font-size: 20px;
     line-height: 28px;
   }
