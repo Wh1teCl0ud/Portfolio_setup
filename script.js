@@ -21,7 +21,6 @@ for (let i = 0; i < navWBtn.length; i += 1) {
 const cards = [{
   title: 'Art Printing Data 1',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -32,7 +31,6 @@ const cards = [{
 {
   title: 'Art Printing Data 2',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -42,7 +40,6 @@ const cards = [{
 {
   title: 'Art Printing Data 3',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -53,7 +50,6 @@ const cards = [{
 {
   title: 'Art Printing Data 4',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -63,7 +59,6 @@ const cards = [{
 {
   title: 'Art Printing Data 5',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -73,7 +68,6 @@ const cards = [{
 {
   title: 'Art Printing Data 6',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
@@ -83,7 +77,6 @@ const cards = [{
 {
   title: 'Art Printing Data 7',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  img: './Images/card-img.svg',
   tech1: 'html',
   tech2: 'css',
   tech3: 'bootstrap',
